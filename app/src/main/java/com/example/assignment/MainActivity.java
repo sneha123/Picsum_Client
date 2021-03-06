@@ -1,20 +1,17 @@
 package com.example.assignment;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -48,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         mRecyclerView = findViewById(R.id.recycler_view);
-       // mRecyclerView.setHasFixedSize(true);
-        //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         mLayoutManager = new GridLayoutManager(this, 2);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
